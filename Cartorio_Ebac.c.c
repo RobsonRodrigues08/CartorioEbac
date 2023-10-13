@@ -126,6 +126,7 @@ int main() {
         printf("\t1-Registrar nome \n");
         printf("\t2-Consultar nome \n");
         printf("\t3-Excluir nome \n");
+        printf("\t4- Sair do sistema\n\n");
         printf("Opção: ");
 
         // Lê a opção do usuário
@@ -139,21 +140,22 @@ int main() {
                 // Exibe mensagem após a conclusão da operação
                 printf("Você escolheu registrar um nome.\n");
                 break;
-
             case 2:
                 consultar();
                 // Exibe mensagem após a conclusão da operação
                 printf("Você escolheu consultar um nome.\n");
                 system("pause");
                 break;
-
             case 3:
                 deletar();
                 // Exibe mensagem após a conclusão da operação
                 printf("Você escolheu excluir um nome.\n");
                 system("pause");
                 break;
-				
+			case 4:
+				printf("Obrigado por utilizar o sistema\n");
+				return 0;
+				break;	
             default:
                 // Exibe uma mensagem de erro para opções inválidas
                 printf("Essa opção não está disponível.\n");
